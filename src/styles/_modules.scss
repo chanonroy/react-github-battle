@@ -15,3 +15,26 @@
     cursor: pointer;
   }
 }
+
+.popular {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__rank {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+  &__item {
+    margin: 45px;
+    text-align: center;
+  }
+  &__avatar {
+    width: 150px;
+    border-radius: 50%;
+  }
+  &__title {
+    font-size: 1.2em;
+  }
+}
