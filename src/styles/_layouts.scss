@@ -19,3 +19,15 @@
 .container-fluid {
   width: 100%;
 }
+
+.nav {
+  display: flex;
+  &__active {
+    font-weight: bold;
+    color: crimson;
+  }
+
+  li {
+    margin-right: 15px;
+  }
+}

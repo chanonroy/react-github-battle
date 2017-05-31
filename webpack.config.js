@@ -11,10 +11,13 @@ module.exports = {
     entry: {
       main: path.join(SRC_DIR, './index.js'),
     },
+
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: '[name].js' // '[name].[hash].js'
+      filename: '[name].js', // '[name].[hash].js'
+      publicPath: '/'
     },
+
     module: {
       loaders: [
         {
@@ -50,6 +53,7 @@ module.exports = {
         }
       ]
     },
+
     plugins: [
         new HtmlWebpackPlugin({
           template: 'index.html'
@@ -60,6 +64,7 @@ module.exports = {
     ],
 
     devServer: {
+      historyApiFallback: true, // needed for client-side routing
       stats: 'errors-only'
     },
 

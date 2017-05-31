@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import './styles/main.scss';
 import './assets/_assets.js';
 
-import { Popular } from './components/popular';
+import { App } from './views/app';
 
 ReactDOM.render(
-  <div className="container">
-    <Popular />
-  </div>,
+  <App />,
   document.getElementById('app')
 );

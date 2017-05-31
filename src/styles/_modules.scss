@@ -38,3 +38,24 @@
     font-size: 1.2em;
   }
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  color: white;
+  background-color: DodgerBlue;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  padding: 7px 0;
+  margin: 10px auto;
+  transition: $transition-custom;
+  &:hover {
+    background-color: lighten(blue, 25%);
+  }
+}
