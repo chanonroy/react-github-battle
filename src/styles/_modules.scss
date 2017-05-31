@@ -1,0 +1,17 @@
+.card {
+  // basic card class with padding
+  background-color: white;
+  box-shadow: $shadow-default;
+  border-radius: $border-radius-default;
+  margin: 7px 0;
+  padding: 20px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  li {
+    margin: 10px 20px;
+    cursor: pointer;
+  }
+}

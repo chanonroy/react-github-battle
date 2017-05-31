@@ -9,7 +9,7 @@ var DIST_DIR = path.resolve(__dirname, './dist');
 
 module.exports = {
     entry: {
-      main: path.join(SRC_DIR, './app/index.js'),
+      main: path.join(SRC_DIR, './index.js'),
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -57,5 +57,10 @@ module.exports = {
         new ExtractTextPlugin({
           filename: "css/[name].css", // [name].[contenthash].css
         }),
-    ]
+    ],
+
+    devServer: {
+      stats: 'errors-only'
+    },
+
 };
