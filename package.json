@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --hot --inline",
+    "build": "cross-env NODE_ENV=prod webpack"
   },
   "babel": {
     "presets": [
@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.5.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.0.0",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
